@@ -67,13 +67,15 @@ export class DispositivoController {
   }
 
   try {
+    const contrasenaCifrada = cifrarContrasena(dispositivoActualizado.contrasena, clave);
+    dispositivoActualizado.contrasena = contrasenaCifrada;
+
     const dispositivo = await DispositivoModel.findByIdAndUpdate(id, dispositivoActualizado, { new: true });
     if (!dispositivo) {
       return res.status(404).json({ message: 'Dispositivo no encontrado' });
     }
     const { nombre, modelo, almacenamiento, contrasena } = req.body as Dispositivo;
-    const contrasenaCifrada = cifrarContrasena(contrasena, clave);
-    dispositivo.contrasena = contrasenaCifrada;
+    // dispositivo.contrasena = contrasenaCifrada;
     res.json(dispositivo);
   } catch (error) {
     res.status(500).json({ message: 'Error al actualizar el dispositivo', error });
