@@ -1,11 +1,11 @@
 
-// import mongoose from 'mongoose';
+import mongoose from 'mongoose';
 
-// const DispositivoSchema = new mongoose.Schema({
-//   nombre: { type: String, required: true },
-//   modelo: { type: String, required: true },
-//   almacenamiento: { type: Number, required: true },
-//   contrasena: { type: String, required: true },
-// });
+const DispositivoSchema = new mongoose.Schema({
+  nombre: { type: String,  },
+  modelo: { type: String, },
+  almacenamiento: { type: Number,  },
+  contrasena: { type: String,  },
+});
 
-// export const DispositivoModel = mongoose.model('Dispositivo', DispositivoSchema);
+export const DispositivoModel = mongoose.model('Dispositivo', DispositivoSchema);

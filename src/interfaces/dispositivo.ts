@@ -1,5 +1,5 @@
 export interface Dispositivo {
-  id: string;
+  //id: string;
   nombre: string;
   modelo: string;
   almacenamiento: number;
