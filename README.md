@@ -10,17 +10,19 @@ minikube docker-env
 
 eval $(minikube -p minikube docker-env)
 
-kubectl delete deployment my-app-deployment
+kubectl delete deployment my-app-deployment --namespace my-app-namespace
 
 kubectl apply -f backend.yaml
 
-kubectl get pods
+kubectl get pods --namespace my-app-namespace
 
 kubectl logs my-app-deployment-75555bf54c-l67mb -c my-app-container
 
-kubectl describe pod my-app-deployment-75555bf54c-l67mb
+Este comando es importante para ver la IP del pod tanto de mongo como de la imagen de Docker.
 
-kubectl port-forward my-app-deployment-75555bf54c-l67mb  3000:3000
+kubectl describe pod my-app-deployment-75555bf54c-l67mb --namespace my-app-namespace
+
+kubectl port-forward [Nombre del pod que representa la imagen]  3000:3000
 
 
 POST
