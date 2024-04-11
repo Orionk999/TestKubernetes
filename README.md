@@ -30,20 +30,21 @@ http://127.0.0.1:3000/dispositivos/
 Request
 ```json
 {
-    "nombre": "Dispositivo",
-    "modelo": "X2014789",
-    "almacenamiento": 35769,
-    "contrasena": "AAAAB"
+    "nombre": "Dispositivo16",
+    "modelo": "XH582",
+    "almacenamiento": 100,
+    "contrasena": "BB"
 }
 ```
 Response
 ```json
 {
-    "id": "a8214da0-75f4-4e2b-8b32-baebc254d7b2",
-    "nombre": "Dispositivo",
-    "modelo": "X2014789",
-    "almacenamiento": 35769,
-    "contrasena": "25c6bd441dcc605bebe114af98165d1b:a73470e09c022efe364b243ba5ff9c77"
+    "nombre": "Dispositivo16",
+    "modelo": "XH582",
+    "almacenamiento": 100,
+    "contrasena": "1e626ede6a6e54d89bd4e46595542a6a:2a32dc7a1e9247bfed2d2ccbe138983d",
+    "_id": "6617681d1a61f8b37f0ae1f7",
+    "__v": 0
 }
 ```
 
@@ -68,32 +69,32 @@ Response
 ```
 
 
-PUT
-http://127.0.0.1:3000/dispositivos/a8214da0-75f4-4e2b-8b32-baebc254d7b2
+http://127.0.0.1:3000/dispositivos/6617681d1a61f8b37f0ae1f7
 Request
 ```json
 {
-    "nombre": "Dispositivoo",
-    "modelo": "X201478",
-    "almacenamiento": 3576,
-    "contrasena": "AAAA"
+    "nombre": "Dispositivo166",
+    "modelo": "XH5822",
+    "almacenamiento": 1000,
+    "contrasena": "BBB"
 }
 
 ```
 Response
 ```json
 {
-    "id": "a8214da0-75f4-4e2b-8b32-baebc254d7b2",
-    "nombre": "Dispositivoo",
-    "modelo": "X201478",
-    "almacenamiento": 3576,
-    "contrasena": "6a9784bf44bb588c8ed4e1ff609fc261:f5d6ec0a80e9d29fc2f5d930c5386e7f"
+    "_id": "6617681d1a61f8b37f0ae1f7",
+    "nombre": "Dispositivo166",
+    "modelo": "XH5822",
+    "almacenamiento": 1000,
+    "contrasena": "3abcbe41a177349543bfe220ceec48d6:39a3e8a3de534ee85aa3bef711a9b4dd",
+    "__v": 0
 }
 ```
 
 
 GET
-http://127.0.0.1:3000/dispositivos/a8214da0-75f4-4e2b-8b32-baebc254d7b2
+http://127.0.0.1:3000/dispositivos/6617681d1a61f8b37f0ae1f7
 Request
 ```json
 
@@ -101,17 +102,18 @@ Request
 Response
 ```json
 {
-    "id": "a8214da0-75f4-4e2b-8b32-baebc254d7b2",
-    "nombre": "Dispositivoo",
-    "modelo": "X201478",
-    "almacenamiento": 3576,
-    "contrasena": "6a9784bf44bb588c8ed4e1ff609fc261:f5d6ec0a80e9d29fc2f5d930c5386e7f"
+    "_id": "6617681d1a61f8b37f0ae1f7",
+    "nombre": "Dispositivo166",
+    "modelo": "XH5822",
+    "almacenamiento": 1000,
+    "contrasena": "3abcbe41a177349543bfe220ceec48d6:39a3e8a3de534ee85aa3bef711a9b4dd",
+    "__v": 0
 }
 ```
 
 
 DELETE
-http://127.0.0.1:3000/dispositivos/a8214da0-75f4-4e2b-8b32-baebc254d7b2
+http://127.0.0.1:3000/dispositivos/6617681d1a61f8b37f0ae1f7
 Request
 ```json
 
